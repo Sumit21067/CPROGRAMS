@@ -1,0 +1,45 @@
+#include <assert.h>
+#include <ctype.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+/*
+ * Complete the 'pattern' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts INTEGER n as parameter.
+ */
+
+int pattern(int n) {
+        int i,j;
+        if(n==0){
+            return 0;
+        }
+else{
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=i;j++){
+            printf("%d ",j);
+        }
+        printf("\n");
+    }
+}
+return (n);
+}
+
+
+int main(){
+
+
+  int  i,j,n;
+  scanf("%d",&n);
+  pattern(n); 
+  return 0; 
+}
